@@ -446,6 +446,8 @@ table td {
   font-size: 24px;
 }
 
+
+
 /**
  * Posts
  */
@@ -546,6 +548,8 @@ h3 {
   color: var(--text_accent_heavy);
 }
 
+
+
 .pfp-main {
   float: right;
   width: 300px;
@@ -555,12 +559,20 @@ h3 {
 }
 
 @media screen and (max-width: 678px) {
+  .home h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
   .pfp-main {
     float: inline-end;
-    width: 50%;
+    width: 200px;
     height: auto;
   }
 }
+
+
+
 
 
 
@@ -577,10 +589,27 @@ h3 {
 
 
 
+
+
+
+
+
+
+
+/**
+ * Project View
+ **/
+.project-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+/** Project container **/
 .project-container {
   display: block;
   /* background-color: hsl(214, 38%, 5%); */
-  background: 
+  background:
     linear-gradient(to top, var(--proj_bg_light) 20px, var(--proj_bg_dark) 400px) padding-box;
   /* border: solid 0.2rem transparent; */
   border-radius: 1rem;
@@ -589,10 +618,7 @@ h3 {
 }
 
 
-/**
- *  Project Header
- **/
-
+/** Project View Header **/
 .proj-header {
   background-color: var(--accent_1);
   background: 
@@ -633,18 +659,12 @@ h3 {
   margin: 0.2em 0.4rem 0rem 0rem;
   padding: 0.15rem 0.6rem 0.19rem;
 }
-
-@media screen and (max-width: 678px) {
-  
-}
-
-/**
- *  END - Project Header - END
- **/
+/** END - Project View Header - END **/
 
 
 
 
+/** Project View Content **/
 .project-content {
   background-color: var(--proj_bg_dark);
   background: 
@@ -686,26 +706,7 @@ h3 {
   border-radius: 0.6rem;
   overflow: hidden;
 }
-
-
-
-
-@media screen and (max-width: 678px) {
-
-  .project-date {
-    font-size: 0.8rem;
-  }
-
-  .project-images-container {
-    flex-flow: column nowrap;
-    align-items: center;
-  }
-
-  .project-images-container img{
-    max-width: max-content;
-    min-width: 250px;
-  }
-}
+/** END - Project View Content - END **/
 
 
 
@@ -716,6 +717,8 @@ h3 {
 
 
 
+
+/** Project Preview **/
 .project-list-preview {
   margin-top: 2rem;
   display: flex;
@@ -733,11 +736,11 @@ h3 {
 }
 
 .project-list-preview > div {
-  flex: 1 0 50%;
+  flex: 1 0 317px;
   margin: 0;
 }
 .project-list-preview > div:last-child {
-  flex-grow: 0;
+  flex-grow: 1;
 }
 
 .project-list-preview a {
@@ -763,15 +766,46 @@ h3 {
 }
 
 
-.project-list {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
+
+
+
+
+
+/**
+ * Project - Mobile changes
+ **/
+
+
+@media screen and (max-width: 678px) {
+
+  /**
+   * Project View
+   **/
+
+  /** Project View Header **/
+  .project-date {
+    font-size: 0.8rem;
+  }
+
+  /** END - Project View Header - END **/
+
+
+
+  /** Project View Content **/
+  .project-images-container {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .project-images-container img {
+    max-width: max-content;
+    min-width: 250px;
+  }
+
+  /** END - Project View Content - END **/
+
+
 }
-
-
-
-
 
 
 
