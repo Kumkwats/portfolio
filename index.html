@@ -25,7 +25,7 @@
         <script>
     (function () {
         if (/bot|crawl|spider/i.test(navigator.userAgent)) return;
-        const lang = localStorage.getItem('lang') /*|| (navigator.language).split('-')[0]*/;
+        const lang = localStorage.getItem('lang') || (navigator.language).split('-')[0];
         window.location.href = lang === 'fr' ? '/portfolio/fr/' : '/portfolio/en/';
     })();
 </script>
