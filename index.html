@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="fr"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 </head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/portfolio/"><b>Axel B.</b></a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/portfolio/fr"><b>Axel B.</b></a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -17,49 +17,25 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/portfolio/0_etudes.html">Formation</a><a class="page-link" href="/portfolio/1_projets_pro.html">Expériences</a><a class="page-link" href="/portfolio/2_projets_perso.html">Projets Perso</a><a class="page-link" href="/portfolio/9_hobbies_fr.html">Hobbies</a></div>
+        <div class="trigger"><a class="page-link" href="/portfolio/fr/pro.html">Expériences</a><a class="page-link" href="/portfolio/fr/education.html">Formation</a><a class="page-link" href="/portfolio/fr/perso.html">Projets Perso</a><a class="page-link" href="/portfolio/fr/hobbies.html">Hobbies</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper" style="height:auto;">
-        <div class="home-wrapper">
-    <div class="home">
-        <br>
-        <img title="Ça c'est ma tête" alt="Photo d'Axel Barault" src="/portfolio/assets/images/AB-face.jpg" class="pfp-main">
-        <h1>Salut !</h1>
-        <h1>Je suis <b>Axel Barault</b>,</h1>
-        <br>
-        <h3> Ingénieur <b>Systèmes Automatisés et Génie Informatique</b>.</h3>
-        <br>
-        <h3>Je code des applications <b>interactives</b> et <b>innovantes</b> pour des personnes <b>qui en ont besoin</b>.</h3>
-        <br>
-        <br>
+        <script>
+    (function () {
+        if (/bot|crawl|spider/i.test(navigator.userAgent)) return;
+        const lang = localStorage.getItem('lang') /*|| (navigator.language).split('-')[0]*/;
+        window.location.href = lang === 'fr' ? '/portfolio/fr/' : '/portfolio/en/';
+    })();
+</script>
 
-        <hr>
-        
-        <br>
-        <h1>Projets notables</h1><div class="project-list-preview">
-        <div>
-            <a title="Activo Neuro" class="project-container" href="/portfolio/1_projets_pro#activo-neuro"><div class="project-preview-cover"><video preload="auto" autoplay muted loop width="100%" playsinline data-disablecontrols="1" data-durationhint="3" data-mwprovider="local">
-                    <source src="/portfolio/assets/videos/activo-neuro/recognition_squat.webm" type="video/webm">
-                </video></div>
-        <div class="project-preview-footer">
-            Activo Neuro
-        </div></a>
-        </div>
-    
-        <div>
-            <a title="Participe 3.0" class="project-container" href="/portfolio/1_projets_pro#participe-3"><div class="project-preview-cover"><div style=" display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: #0004;">
-                    <span>
-                        Illustration Coming Soon
-                    </span>
-                </div></div>
-        <div class="project-preview-footer">
-            Participe 3.0
-        </div></a>
-        </div>
-    
-</div></div>
+<div class="home-wrapper">
+    <div class="home">
+    <h1>Welcome</h1>
+        <a href="/portfolio/fr/">Voir en français</a><br>
+        <a href="/portfolio/en/">Read in English</a><br>
+    </div>
 </div>
 
       </div>
@@ -78,7 +54,6 @@
 
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Kumkwats"><svg class="svg-icon"><use xlink:href="/portfolio/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Kumkwats</span></a></li></ul>
 </div>
-
       <div class="footer-col footer-col-3">
         <p>Ceci est mon humble portfolio, construit avec <a href="https://jekyllrb.com/">Jekyll</a></p>
       </div>

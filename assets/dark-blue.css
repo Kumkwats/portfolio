@@ -12,9 +12,9 @@
   --accent_1_darkest: hsl(222, 76%, 30%);
   
   --text_accent_max: hsl(222, 100%, 98%);
-  --text_accent_heavy: hsl(222, 100%, 95%);
-  --text_accent_soft: hsl(222, 100%, 90%);
-  --text_color: hsl(222, 76%, 88%);
+  --text_accent_heavy: hsl(222, 100%, 96%);
+  --text_accent_soft: hsl(222, 100%, 94%);
+  --text_color: hsl(222, 76%, 90%);
 
   --link_highlight: hsl(45, 100%, 75%);
 
@@ -665,15 +665,19 @@ h3 {
 
 
 /** Project View Content **/
-.project-content {
+.project-content-wrapper {
   background-color: var(--proj_bg_dark);
-  background: 
-    linear-gradient(to top, var(--proj_bg_light) 20px, var(--proj_bg_dark) 400px) padding-box,
-    linear-gradient(to top, var(--proj_bg_light) 50px, var(--accent_1) 250px) border-box;
-  border: solid 0.2rem transparent;
-  border-radius: 0 0 1rem 1rem;
-  border-top: none;
-  padding: 1rem;
+    background:
+      linear-gradient(to top, var(--proj_bg_light) 20px, var(--proj_bg_dark) 400px) padding-box,
+      linear-gradient(to top, var(--proj_bg_light) 50px, var(--accent_1) 250px) border-box;
+    border: solid 0.2rem transparent;
+    border-radius: 0 0 1rem 1rem;
+    border-top: none;
+    padding: 1rem;
+}
+
+.project-content p{
+  padding: 1rem 0;
 }
 
 .project-content b, .project-content strong {
@@ -752,6 +756,20 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.project-preview-header {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.project-preview-summary {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .project-preview-footer {
