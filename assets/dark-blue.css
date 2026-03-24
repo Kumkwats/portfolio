@@ -740,11 +740,8 @@ h3 {
 }
 
 .project-list-preview > div {
-  flex: 1 0 317px;
+  flex: 0 0 50%;
   margin: 0;
-}
-.project-list-preview > div:last-child {
-  flex-grow: 1;
 }
 
 .project-list-preview a {
@@ -797,7 +794,7 @@ h3 {
 @media screen and (max-width: 678px) {
 
   /**
-   * Project View
+   * Project VIEW
    **/
 
   /** Project View Header **/
@@ -822,7 +819,20 @@ h3 {
 
   /** END - Project View Content - END **/
 
+  /**
+   * END - Project VIEW
+   **/
 
+
+  /**
+  * Project Preview
+  **/
+
+  .project-list-preview>div {
+    flex: 1 0 100%;
+  }
+
+  /** END - Project Preview - END **/
 }
 
 
