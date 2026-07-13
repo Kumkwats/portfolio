@@ -707,6 +707,7 @@ h3 {
   margin-right: auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   border-radius: 0.6rem;
   overflow: hidden;
 }
@@ -776,9 +777,12 @@ h3 {
   text-align: center;
 }
 
-.project-preview-cover img, .project-preview-cover video {
+.project-preview-cover img,
+.project-preview-cover video {
   max-height: 250px;
+  border-radius: 0.6rem;
 }
+
 
 
 
